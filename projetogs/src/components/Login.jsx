@@ -27,7 +27,6 @@ function Login() {
     }
 
     setError('');
-    // Lógica de autenticação aqui (ex: chamada a uma API de autenticação)
     alert("Login bem-sucedido!"); // Apenas para demonstração
   };
 
@@ -55,7 +54,7 @@ function Login() {
         
         {error && <p style={{ color: 'red' }}>{error}</p>}
         
-        <button type="submit">Entrar</button>
+        <button className="login-button" type="submit">Entrar</button>
       </form>
       <p>
         Não tem uma conta? <Link to="/register">Registre-se aqui</Link>

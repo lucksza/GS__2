@@ -3,8 +3,8 @@
   font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  color: #e0e0e0; /* Cinza claro para texto */
-  background-color: #121212; /* Fundo bem escuro */
+  color: #e0e0e0;
+  background-color: #121212;
 }
 
 /* Corpo */
@@ -25,142 +25,32 @@ body {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  background-color: #121212; /* Fundo bem escuro */
+  background-color: #121212;
 }
 
 /* Cabeçalhos */
 h1, h2 {
-  color: #FFD700; /* Amarelo */
+  color: #FFD700;
   margin-bottom: 1rem;
 }
 
 /* Links */
 a {
   font-weight: 500;
-  color: #FFD700; /* Amarelo */
+  color: #FFD700;
   text-decoration: none;
-  padding: 0.5rem 1rem; /* Aumenta a área clicável */
-  margin: 0.5rem; /* Espaçamento ao redor dos links */
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #FFA500; /* Laranja */
+  color: #FFA500;
 }
 
-/* Botões */
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.8em 1.5em; /* Aumenta padding para ampliar a área clicável */
-  font-size: 1em;
-  font-weight: 500;
-  background-color: #333333; /* Cinza escuro */
-  color: #e0e0e0; /* Cinza claro */
-  cursor: pointer;
-  margin: 0.5rem; /* Espaço ao redor dos botões */
-  transition: background-color 0.3s ease, border-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #444444; /* Cinza um pouco mais claro */
-  border-color: #FFD700; /* Borda amarela */
-}
-
-/* Cartão com Efeito Hover */
-.card {
-  padding: 2em;
-  margin: 2.5em 0; /* Aumenta o espaçamento vertical entre cartões */
-  border: 1px solid #444444; /* Cinza escuro */
-  border-radius: 8px;
-  background-color: #1e1e1e; /* Fundo escuro do cartão */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra suave */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 15px 5px rgba(218, 165, 32, 0.5); /* Sombra amarela escura */
-}
-
-/* Seções da Página */
-.home, .about, .solution, .contact, .dashboard {
-  padding: 2rem;
-  margin-bottom: 3rem; /* Espaçamento maior entre seções */
-  text-align: center;
-  color: #e0e0e0; /* Cinza claro */
-  background-color: #121212; /* Fundo bem escuro */
-}
-
-/* Estilo para Imagem na Home */
-.home-image {
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.home-image img {
-  width: 60%; /* Reduz o tamanho da imagem */
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra suave */
-}
-
-/* Formulários */
-.contact label, .login label {
-  display: block;
-  margin-top: 1rem;
-  color: #FFD700; /* Amarelo */
-}
-
-.contact input, .contact textarea, .login input {
-  width: 100%;
-  padding: 0.5rem;
-  margin: 0.5rem 0;
-  border: 1px solid #444444;
-  border-radius: 4px;
-  background-color: #333333;
-  color: #e0e0e0;
-}
-
-.submit-button, .login-button {
-  background-color: #444444; /* Cinza escuro */
-  color: #FFD700; /* Amarelo */
-  padding: 0.5rem 1rem;
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
-
-.submit-button:hover, .login-button:hover {
-  background-color: #555555; /* Cinza mais claro */
-}
-
-/* Header e Footer */
-.header, .footer {
-  background-color: #1e1e1e; /* Fundo escuro */
-  color: #FFD700; /* Amarelo */
-  padding: 1rem;
-  text-align: center;
-}
-
-/* Ajustes Responsivos */
-@media (max-width: 768px) {
-  #root {
-    padding: 1rem;
-  }
-
-  h1 {
-    font-size: 2.5em;
-  }
-
-  h2 {
-    font-size: 2em;
-  }
-}
 /* Estilo para links de navegação com efeito hover */
 .header nav a {
-  color: #FFD700; /* Cor do texto em amarelo */
+  color: #FFD700;
   text-decoration: none;
   margin: 0 1.5rem;
   padding: 0.5rem 1rem;
@@ -170,30 +60,88 @@ button:hover {
 }
 
 .header nav a:hover {
-  color: #FFA500; /* Laranja mais claro ao passar o mouse */
-  transform: scale(1.1); /* Aumenta o tamanho do texto */
+  color: #FFA500;
+  transform: scale(1.1);
 }
 
-/* Efeito de sublinhado animado */
 .header nav a::after {
   content: '';
   position: absolute;
   width: 0;
   height: 2px;
-  background-color: #FFA500; /* Cor do sublinhado em laranja */
+  background-color: #FFA500;
   bottom: 0;
   left: 0;
   transition: width 0.3s ease;
 }
 
 .header nav a:hover::after {
-  width: 100%; /* Expande o sublinhado ao passar o mouse */
+  width: 100%;
 }
+
+/* Botões */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.8em 1.5em;
+  font-size: 1em;
+  font-weight: 500;
+  background-color: #333333;
+  color: #e0e0e0;
+  cursor: pointer;
+  margin: 0.5rem;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #444444;
+  border-color: #FFD700;
+}
+
+/* Cartão com Efeito Hover */
+.card {
+  padding: 2em;
+  margin: 2.5em 0;
+  border: 1px solid #444444;
+  border-radius: 8px;
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px 5px rgba(218, 165, 32, 0.5);
+}
+
+/* Seções da Página */
+.home, .about, .solution, .contact, .gamificacao {
+  padding: 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: #e0e0e0;
+  background-color: #121212;
+}
+
+/* Estilo para Imagem na Home */
+.home-image {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.home-image img {
+  width: 60%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo de Formulário de Contato e Redes Sociais */
 .contact {
   text-align: center;
   padding: 2rem;
   color: #e0e0e0;
-  background-color: #1e1e1e; /* Fundo escuro */
+  background-color: #1e1e1e;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   max-width: 400px;
@@ -221,5 +169,200 @@ button:hover {
 }
 
 .social-links a img:hover {
-  transform: scale(1.2); /* Efeito de zoom ao passar o mouse */
+  transform: scale(1.2);
 }
+
+/* Formulário de Login Melhorado */
+.login {
+  max-width: 400px;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  border-radius: 12px;
+  background-color: #1a1a1a;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  color: #e0e0e0;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.login:hover {
+  transform: translateY(-5px);
+}
+
+.login h2 {
+  text-align: center;
+  color: #FFD700;
+  margin-bottom: 1.5rem;
+}
+
+.login label {
+  display: block;
+  margin-top: 1.2rem;
+  color: #FFD700;
+  font-weight: bold;
+}
+
+.login input {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  border: 1px solid #555555;
+  border-radius: 6px;
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login input:focus {
+  border-color: #FFD700;
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.4);
+  outline: none;
+}
+
+.login-button {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 1.5rem;
+  background-color: #444444;
+  color: #FFD700;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.login-button:hover {
+  background-color: #555555;
+  transform: scale(1.03);
+}
+
+.login p {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.login p a {
+  color: #FFD700;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.login p a:hover {
+  color: #FFA500;
+}
+
+/* Gamificação */
+.gamificacao {
+  padding: 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: #e0e0e0;
+  background-color: #121212;
+}
+
+/* Ajustes Responsivos */
+@media (max-width: 768px) {
+  #root {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+}
+/* Dashboard Simulação */
+.dashboard {
+  padding: 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: #e0e0e0;
+  background-color: #121212;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.dashboard h2 {
+  color: #FFD700;
+  margin-bottom: 1.5rem;
+}
+
+.dashboard-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.dashboard .card {
+  width: 220px;
+  padding: 1.5rem;
+  background-color: #1e1e1e;
+  border-rad
+  .about {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 1rem;
+    background-color: #121212;
+    color: #e0e0e0;
+    text-align: center;
+  }
+  
+  .about h2 {
+    color: #FFD700;
+    margin-bottom: 2rem;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  
+  .card {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    width: 280px;
+    color: #e0e0e0;
+    transition: transform 0.3s;
+    text-align: left;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px 5px rgba(218, 165, 32, 0.5);
+  }
+  
+  .card h3 {
+    color: #FFD700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card p {
+    color: #b0b0b0;
+    line-height: 1.6;
+  }
+  
+  .link-voltar {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.6rem 1.2rem;
+    background-color: #FFD700;
+    color: #121212;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
+  
+  .link-voltar:hover {
+    background-color: #FFA500;
+  }
+}  
