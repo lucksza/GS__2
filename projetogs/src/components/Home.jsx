@@ -14,7 +14,7 @@ function Home() {
         <img src="/src/image/home.png" alt="Energia Solar em Painéis Flutuantes" />
       </div>
       <p>
-        <Link to="/about">Saiba mais sobre nossa solução</Link>
+        <Link to="/Solution">Saiba mais sobre nossa solução</Link>
       </p>
     </div>
   );

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import validarCPF from '../utils/valida_cpf'; // Ajuste o caminho conforme necessário
+import validarCPF from '../utils/valida_cpf';
 
 function Login() {
   const [cpf, setCpf] = useState('');
@@ -27,7 +27,7 @@ function Login() {
     }
 
     setError('');
-    alert("Login bem-sucedido!"); // Apenas para demonstração
+    alert("Login bem-sucedido!"); 
   };
 
   return (
