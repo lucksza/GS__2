@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+
 
 function Dashboard() {
   const [dados, setDados] = useState({
