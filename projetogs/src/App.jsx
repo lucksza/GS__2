@@ -7,7 +7,9 @@ import About from './components/About';
 import Solution from './components/Solution';
 import Contact from './components/Contact';
 import Login from './components/Login';
+import Register from './components/Register'; 
 import Dashboard from './components/Dashboard';
+
 import './styles/styles.css';
 
 function App() {
@@ -24,6 +26,7 @@ function App() {
         <Route path="/solution" element={<Solution />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} /> 
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
       <Footer />

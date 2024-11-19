@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import validarCPF from '../utils/valida_cpf';
 
 function Login() {
@@ -36,13 +36,12 @@ function Login() {
     }
 
     setError('');
-    // Criptografar dados e armazenar no sessionStorage
     const encryptedData = btoa(JSON.stringify({ cpf, password }));
     sessionStorage.setItem('userSession', encryptedData);
 
     alert('Login bem-sucedido!');
     setIsLoggedIn(true);
-    navigate('/dashboard'); // Redirecionar para a dashboard
+    navigate('/dashboard');
   };
 
   const handleLogout = () => {
@@ -80,13 +79,10 @@ function Login() {
             placeholder="Digite sua senha"
           />
           {error && <p style={{ color: 'red' }}>{error}</p>}
-          <button className="login-button" type="submit">Entrar</button>
+          <button className="login-button" type="submit">
+            Entrar
+          </button>
         </form>
-      )}
-      {!isLoggedIn && (
-        <p>
-          Não tem uma conta? <Link to="/register">Registre-se aqui</Link>
-        </p>
       )}
     </div>
   );

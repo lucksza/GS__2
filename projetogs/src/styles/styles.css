@@ -627,3 +627,151 @@ h2 {
 .result button:hover {
   background-color: #FFA500;
 }
+.solution {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #121212, #1e1e1e);
+  color: #e0e0e0;
+}
+
+.solution h1 {
+  font-size: 2.5rem;
+  color: #FFD700;
+  margin-bottom: 1.5rem;
+}
+
+.solution-intro {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.solution-sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.section-card {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  text-align: left;
+  width: 400px;
+  padding: 1.5rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.section-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.6);
+}
+
+.section-card h2 {
+  color: #FFD700;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.section-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #b0b0b0;
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #FFD700;
+  color: #121212;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #795005;
+}
+.register {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #121212, #1e1e1e);
+  color: #e0e0e0;
+}
+
+.register h1 {
+  font-size: 2rem;
+  color: #FFD700;
+  margin-bottom: 1.5rem;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.register-form label {
+  width: 100%;
+  text-align: left;
+  color: #FFD700;
+}
+
+.register-form input,
+.register-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #444444;
+  border-radius: 8px;
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  font-size: 1rem;
+}
+
+.register-form button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #FFD700;
+  color: #121212;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.register-form button:hover {
+  background-color: #FFA500;
+}
+
+.json-output {
+  text-align: left;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 2rem auto;
+  color: #FFD700;
+  max-width: 800px;
+  overflow-x: auto;
+  font-family: 'Courier New', Courier, monospace;
+}
+.register-link {
+  background: none;
+  border: none;
+  color: #FFD700;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0;
+  transition: color 0.3s ease;
+}
+
+.register-link:hover {
+  color: #FFA500;
+}

@@ -10,6 +10,7 @@ function Header() {
         <Link to="/solution">Solução</Link>
         <Link to="/contact">Contato</Link>
         <Link to="/login">Login</Link>
+        <Link to="/register" className="register-button">Registrar</Link> {/* Botão de Registrar */}
         <Link to="/dashboard">Dashboard</Link>
       </nav>
     </header>
